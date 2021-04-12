@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>{% block title %}My amazing site{% endblock %}</title>
+</head>
+
+<body>
+        <h1> main title </h1>
+        {% block pagetitle %} <h2> default page title </h2> {% endblock %}
+        {% block sidebar %}
+        
+            <p> <!-- default page content--> </p>
+        
+        {% endblock %}
+
+
+
+        {% block content %}{% endblock %}
+
+</body>
